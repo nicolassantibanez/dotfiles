@@ -1,11 +1,13 @@
 -- To search for any of these settings, use :help option-list
 local set = vim.opt
 
+-- Use spaces instead of tabs
 set.expandtab = true
-set.smarttab = true
+--set.smarttab = true
 set.shiftwidth = 4
 set.tabstop = 4
 set.softtabstop = 4
+set.smartindent = true
 
 set.hlsearch = true
 set.incsearch = true
@@ -16,8 +18,10 @@ set.splitright = true
 set.scrolloff = 8
 set.fileencoding = 'utf-8'
 
--- Doesn't work on Mac's terminal
 set.termguicolors = true
+
+-- Keep thick cursor in insert mode
+set.guicursor = ""
 
 set.number = true
 set.relativenumber = true
@@ -32,7 +36,9 @@ set.smd = false
 set.linebreak = true
 set.numberwidth = 1
 set.mouse = "a"
-set.clipboard = "unnamed,unnamedplus"
+--set.clipboard = "unnamed,unnamedplus"
+
+set.updatetime = 100
 
 -- Directories for backup files
 set.backupdir = os.getenv("TMPDIR")

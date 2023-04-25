@@ -4,8 +4,7 @@ return require('packer').startup(function(use)
 
     -- nvim-tree
     use 'kyazdani42/nvim-web-devicons'
-    use 'kyazdani42/nvim-tree.lua'
-    use "rebelot/kanagawa.nvim"
+   -- use 'kyazdani42/nvim-tree.lua'
 
     -- lua-line
     use {
@@ -30,12 +29,22 @@ return require('packer').startup(function(use)
     -- treesitter-context (for sticky headers)
     use 'nvim-treesitter/nvim-treesitter-context'
 
+    -- Harpoon
+    use 'theprimeagen/harpoon'
+
+    -- Undotree
+    use 'mbbill/undotree'
+
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.0',
-      requires = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    -- colorschemes
+    -- Colorschemes
     use 'EdenEast/nightfox.nvim'
     use 'morhetz/gruvbox'
+    use "rebelot/kanagawa.nvim"
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use 'navarasu/onedark.nvim'
+    use "loctvl842/monokai-pro.nvim"
 end)
