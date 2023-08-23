@@ -1,0 +1,169 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 8,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "isort.args": [
+        "-- profile",
+        "black"
+    ],
+    "vim.leader": " ",
+    "vim.hlsearch": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-k>": false,
+        "<C-z>": false,
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z",
+                "z",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z",
+                "z",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "Y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "Y"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.view.explorer",
+            ]
+        },
+        {
+            "before": [
+                "K",
+            ],
+            "commands": [
+                "lineBreakInsert",
+            ],
+            "silent": true,
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "Y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "Y"
+            ]
+        },
+    ],
+    "editor.tokenColorCustomizations": {
+        "[Dracula Pycharm with Dark GUI]": {
+            "strings": "#15b17b"
+        }
+    },
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+}
