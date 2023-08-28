@@ -159,6 +159,22 @@
                 "Y"
             ]
         },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
     ],
     "editor.tokenColorCustomizations": {
         "[Dracula Pycharm with Dark GUI]": {
